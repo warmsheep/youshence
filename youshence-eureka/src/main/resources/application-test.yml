@@ -1,0 +1,20 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: youshence
+    password: youshence123
+server:
+  port: 9080
+  
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 10000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://youshence:youshence123@127.0.0.1:9080/eureka
+   
+ 
